@@ -15,26 +15,58 @@
     }
   },
   "scripts": {
-    "build": "rozenite build",
-    "dev": "rozenite dev"
+    "prepublishOnly": "rozenite build",
+    "dev": "rozenite dev",
+    "release": "release-it"
   },
   "dependencies": {
     "@rozenite/plugin-bridge": "1.0.0-alpha.8"
   },
   "devDependencies": {
-    "vite": "^6.0.0",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@rozenite/vite-plugin": "1.0.0-alpha.8",
-    "typescript": "^5.7.3",
-    "rozenite": "1.0.0-alpha.8",
-    "react-native-web": "0.21.0",
+    "@types/react": "~18.3.12",
     "react": "18.3.1",
     "react-dom": "18.3.0",
     "react-native": "0.76.0",
-    "@types/react": "~18.3.12"
+    "react-native-web": "0.21.0",
+    "release-it": "^19.0.4",
+    "rozenite": "1.0.0-alpha.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.0"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akuul/rozenite-custom-commands"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "hooks": {
+      "before:npm:publish": "npm run build"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "angular"
+        }
+      }
+    }
   },
   "keywords": [
     "react-native",
