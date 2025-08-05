@@ -1,0 +1,52 @@
+{
+  "name": "rozenite-custom-commands",
+  "version": "0.0.1",
+  "description": "Add and execute custom commands in React Native via React Native DevTools powered by Rozenite",
+  "author": "Aironas Kulvelis <aironaskul@gmail.com> (https://github.com/akuul)",
+  "type": "module",
+  "main": "./dist/react-native.cjs",
+  "module": "./dist/react-native.js",
+  "types": "./dist/react-native.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/react-native.d.ts",
+      "import": "./dist/react-native.js",
+      "require": "./dist/react-native.cjs"
+    }
+  },
+  "scripts": {
+    "build": "rozenite build",
+    "dev": "rozenite dev"
+  },
+  "dependencies": {
+    "@rozenite/plugin-bridge": "1.0.0-alpha.8"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@rozenite/vite-plugin": "1.0.0-alpha.8",
+    "typescript": "^5.7.3",
+    "rozenite": "1.0.0-alpha.8",
+    "react-native-web": "0.21.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.0",
+    "react-native": "0.76.0",
+    "@types/react": "~18.3.12"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-custom-commands",
+    "custom-commands",
+    "rozenite-custom-commands",
+    "rozenite-plugin",
+    "react-native-devtools",
+    "rozenite",
+    "devtools",
+    "developer-tools",
+    "debugging"
+  ],
+  "license": "MIT"
+}

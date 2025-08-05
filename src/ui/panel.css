@@ -1,0 +1,36 @@
+.custom-commands-panel {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto',
+    sans-serif;
+  min-height: 100vh;
+  background-color: #0f172a;
+  overflow-y: scroll;
+}
+
+.grid {
+  padding: 0.8rem 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(4, 320px);
+  }
+}
+
+.category-header {
+  color: #d1c4e9;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 1.6rem 0.6rem 1.6rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.4rem;
+}

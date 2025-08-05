@@ -1,0 +1,104 @@
+.card {
+  width: 100%;
+  min-height: 160px;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.card-header {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0 0 4px 0;
+}
+
+.card-description {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.add-button-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+  font-size: 0.8rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 0.2rem;
+  background-color: #8232ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.input-pair {
+  display: flex;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.75rem;
+}
+
+.remove-button {
+  background-color: #c63737;
+  margin-left: 0.8rem;
+}
+
+.execute-button {
+  width: 100%;
+  background-color: #d1c4e9;
+  color: #1e293b;
+  font-weight: 600;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.execute-button:hover {
+  background-color: #b3a3d0;
+}

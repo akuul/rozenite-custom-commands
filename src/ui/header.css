@@ -1,0 +1,31 @@
+.header {
+  padding: 0.8rem 1.6rem;
+  margin-bottom: 2rem;
+  background-color: #121c32;
+  border-bottom: 1px solid #334155;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branding h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #d1c4e9;
+  margin: 0;
+}
+
+.branding p {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.rozenite {
+  color: #8232ff;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
