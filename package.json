@@ -1,6 +1,6 @@
 {
   "name": "rozenite-custom-commands",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Add and execute custom commands in React Native via React Native DevTools powered by Rozenite",
   "author": "Aironas Kulvelis <aironaskul@gmail.com> (https://github.com/akuul)",
   "type": "module",
