@@ -24,6 +24,8 @@ bun add -D rozenite-custom-commands
 
 ## Demo
 
+https://github.com/user-attachments/assets/a1cb930c-dfec-443f-a2be-f31a31e3667c
+
 ## API
 
 #### `useCustomCommands(commands: CustomCommand[])`
