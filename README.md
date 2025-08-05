@@ -106,10 +106,9 @@ export const App = () => {
       title: 'Navigates to screen (params)',
       description: 'Navigates to specific screen defined inside input',
       category: 'React Navigation',
-      command: () => {
-        if (navigationRef.isReady() && navigationRef.canGoBack()) {
-          navigationRef.goBack();
-        }
+      command: (arg) => {
+        const screenName = arg?.screen ?? '';
+        navigationRef.navigate(screenName);
       },
     },
   ]);
